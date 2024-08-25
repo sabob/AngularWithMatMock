@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background-color: var(--light-white);
+}
+
+h1 {
+  font-size: 48px;
+  padding-top: 25px;
+  text-align: center;
+  margin: 0 0 20px;
+  letter-spacing: -3px;
+  font-weight: 100;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Disable the yellow background for autocompleted fields in Chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #000;
+}
+
+ng-component {
+  width: 100%;
+}
+
+.secure-container {
+}
+
+
+section.content {
+  padding: 15px;
+  padding-top: 0px;
+}

@@ -1,0 +1,21 @@
+.mat-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mat-table th {
+  text-align: left;
+}
+
+.mat-table th {
+  border-top: 1px solid rgba(0, 0, 0, .12);
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+
+.mat-table td {
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+
+.mat-table tr {
+  height: 48px;
+}

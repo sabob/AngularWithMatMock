@@ -1,0 +1,45 @@
+ .mat-toolbar {
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%), 0 3px 3px 0 rgb(0 0 0 / 8%), 0 1px 1px 0 rgb(0 0 0 / 8%);
+  color: rgba(0, 0, 0, .5);
+  font-weight: normal;
+}
+
+mat-icon {
+  line-height: 1;
+}
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+}
+
+mat-toolbar a {
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+mat-toolbar label {
+  font-size: .9rem;
+}
+
+mat-toolbar > a, mat-toolbar > span {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+mat-toolbar a:last-child {
+  margin-right: 0;
+
+}
+
+@media (max-width: 960px) {
+  .app-info {
+    display: none;
+  }
+}

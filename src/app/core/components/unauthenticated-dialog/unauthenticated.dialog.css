@@ -1,0 +1,56 @@
+.action-bar {
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.mat-divider {
+  border-top-color: #0000001f;
+}
+
+.primary-icon {
+  color: var(--primary);
+}
+
+/* Note: If you're using an SVG icon, you should make the class target the `<svg>` element */
+.primary-icon svg {
+  fill: var(--primary);
+}
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.header-icon {
+  color: #cecece;
+  margin: 0 10px;
+}
+
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header mat-icon {
+  font-size: 28px;
+}
+
+h4 {
+  text-align: center;
+}

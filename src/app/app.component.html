@@ -1,0 +1,11 @@
+@if (store.getInitializeStatus().initialized) {
+  <section role="main" [@fadeAnimation]="animateRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </section>
+
+  <app-feedback></app-feedback>
+
+
+} @else {
+  <init-error></init-error>
+}

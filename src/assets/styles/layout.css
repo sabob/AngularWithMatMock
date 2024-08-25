@@ -1,0 +1,31 @@
+app-root .secure-app {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "left main right"
+    "footer footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+.left-sidebar {
+  grid-area: left;
+}
+
+.right-sidebar {
+  grid-area: right;
+}
+
+footer {
+  grid-area: footer;
+}

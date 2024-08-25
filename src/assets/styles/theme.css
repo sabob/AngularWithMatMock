@@ -1,0 +1,65 @@
+:root {
+  --primary: #ff3a30;
+  --secondary: #ffffff;
+  --light-white: #fafafa;
+  --success: #007E33;
+  --warning: #FF8800;
+  --info: #0099CC;
+  --error: #CC0000;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-light-white {
+  color: var(--light-white);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+.text-info {
+  color: var(--info);
+}
+
+.text-error {
+  color: var(--error);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-secondary {
+  color: var(--secondary);
+}
+
+.bg-light-white {
+  color: var(--light-white);
+}
+
+.bg-success {
+  color: var(--success);
+}
+
+.bg-warning {
+  color: var(--warning);
+}
+
+.bg-info {
+  color: var(--info);
+}
+
+.bg-error {
+  color: var(--error);
+}

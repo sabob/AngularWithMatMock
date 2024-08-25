@@ -1,0 +1,18 @@
+<div class="secure-app">
+  <header>
+    <navbar></navbar>
+  </header>
+
+  <div class="left-sidebar">
+  </div>
+
+  <main class="secure-container" [@fadeAnimation]="animateRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </main>
+
+  <div class="right-sidebar">
+  </div>
+
+  <footer>
+  </footer>
+</div>

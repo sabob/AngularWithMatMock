@@ -1,0 +1,35 @@
+.validate-form mat-form-field {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+
+.validate-form {
+  padding: 15px;
+  padding-top: 0;
+  flex-basis: 50%;
+  /*flex-basis: 66.66%;*/
+  margin: 15px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-right: 30px;
+  /*border: 1px solid #000;*/
+}
+
+@media (max-width: 676px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.actions {
+  margin-top: 9px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background: none !important;
+
+}

@@ -1,0 +1,20 @@
+<div id="mai-feedback" class="mai center fullscreen">
+  <div class="mai-feedback-block">
+    <div class="mai-feedback-wrapper">
+      <h1 class="mai-feedback-header">We have a problem!</h1>
+      <div class="mai-feedback-body">
+        <div>
+          The application failed to load.
+          <div id="error-message" class="error-message">
+            {{ store.getInitializeStatus().errorMessage }}
+          </div>
+        </div>
+        <div class="retry-link">
+          Retry <a href="" id="mai-feedback-retry-link">here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,68 @@
+<section class="content">
+  <h1>Customer</h1>
+
+  <form class="validate-form" [formGroup]="customerForm" (ngSubmit)="save()">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Firstname</mat-label>
+      <input matInput placeholder="Firstname" formControlName="firstname" required>
+
+      @if (customerForm.controls.firstname.errors?.required && customerForm.controls.firstname.dirty) {
+        <mat-error>
+          Firstname is required
+        </mat-error>
+      }
+      @if (customerForm.controls.firstname.errors?.maxlength && customerForm.controls.firstname.dirty) {
+        <mat-error>
+          Firstname cannot be greater than {{ customerForm.controls.firstname.errors?.maxlength.requiredLength }}
+          characters
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Lastname</mat-label>
+      <input matInput placeholder="Lastname" formControlName="lastname" required>
+
+      @if (customerForm.controls.lastname.errors?.required && customerForm.controls.lastname.dirty) {
+        <mat-error>
+          Lastname is required
+        </mat-error>
+      }
+      @if (customerForm.controls.lastname.errors?.maxlength && customerForm.controls.lastname.dirty) {
+        <mat-error>
+          Lastname cannot be greater than {{ customerForm.controls.lastname.errors?.maxlength.requiredLength }}
+          characters
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>ID number</mat-label>
+      <input matInput placeholder="ID number" formControlName="idNumber" required>
+
+      @if (customerForm.controls.idNumber.errors?.required && customerForm.controls.idNumber.dirty) {
+        <mat-error>
+          ID number is required
+        </mat-error>
+      }
+      @if (customerForm.controls.idNumber.errors?.pattern && customerForm.controls.idNumber.dirty) {
+        <mat-error>
+          ID must only contain numbers
+        </mat-error>
+      }
+      @if (customerForm.controls.idNumber.errors?.maxlength && customerForm.controls.idNumber.dirty) {
+        <mat-error>
+          Lastname cannot be greater than {{ customerForm.controls.idNumber.errors?.maxlength.requiredLength }}
+          characters
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <div class="actions">
+      <button mat-flat-button >Submit</button>
+    </div>
+
+  </form>
+
+</section>

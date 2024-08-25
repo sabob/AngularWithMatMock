@@ -1,0 +1,62 @@
+input {
+
+}
+
+:root .mat-flat-button {
+  border-radius: 24px;
+}
+
+:root .mat-raised-button {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px 15px;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  background-color: var(--primary);
+  border-radius: 24px;
+  width: 100%;
+  border: 0px;
+  color: #fff;
+}
+
+.ng-valid.mat-focused .mat-form-field-underline .mat-form-field-ripple {
+  background: #000 !important;
+}
+
+.ng-valid.mat-focused .mat-form-field-label {
+  color: #000 !important;
+}
+
+mat-form-field {
+  margin-top: 10px;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  justify-content: center;
+  background-color: #ff3a30;
+  border-radius: 11px;
+  /*border-bottom-right-radius: 0px;*/
+  /*border-bottom-left-radius: 0px;*/
+  color: white;
+}
+
+form {
+  padding: 12px;
+  border-radius: 24px;
+  margin: auto;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+
+}
+
+a, a:hover {
+  color: #ff3a30;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+li.active a {
+  background-color: #ff3a30 !important;
+  border-color: var(--primary) !important;
+
+}

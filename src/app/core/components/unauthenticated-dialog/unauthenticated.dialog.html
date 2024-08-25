@@ -1,0 +1,18 @@
+<h2 mat-dialog-title class="header">
+  <div class="icon-with-text">
+    <mat-icon class="header-icon">av_timer</mat-icon>
+    <span>Session expired!</span>
+  </div>
+</h2>
+
+<mat-dialog-content>
+
+  <h4>You have to login again.</h4>
+
+</mat-dialog-content>
+
+<mat-divider></mat-divider>
+<mat-dialog-actions class="action-bar">
+  <button mat-flat-button (click)="onLoginClick()" color="accent">Login</button>
+  <button mat-flat-button (click)="onCancelClick()" cdkFocusInitial>Cancel</button>
+</mat-dialog-actions>

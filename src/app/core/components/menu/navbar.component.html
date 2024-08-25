@@ -1,0 +1,46 @@
+<mat-toolbar color="primary">
+
+  <span>My App</span>
+
+  <a [routerLink]="['/home']" mat-button>
+    <mat-icon>home</mat-icon>
+    Home
+  </a>
+
+  <a [routerLink]="['/customers']" mat-button>
+    <mat-icon>search</mat-icon>
+    Customers
+  </a>
+
+  <a [routerLink]="['/customer/create']" mat-button>
+    <mat-icon>check</mat-icon>
+    Create customer
+  </a>
+
+  <span class="nav-spacer"></span>
+
+  <label class="app-info" [matTooltip]="'Profile : ' + profile + ' | Version : ' + version">
+    User:{{ username }}
+  </label>
+
+  <a mat-button href="#" [matMenuTriggerFor]="menu" (click)="$event.preventDefault()">
+    <mat-icon>account_circle</mat-icon>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout($event)">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </a>
+
+  <!--  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">-->
+  <!--    <mat-icon>more_vert</mat-icon>-->
+  <!--  </button>-->
+
+  <!--  <a (click)="openConfirmLogoutDialog($event)" href="#" mat-button>-->
+  <!--    <mat-icon>logout</mat-icon>-->
+  <!--    Logout-->
+  <!--  </a>-->
+
+
+</mat-toolbar>

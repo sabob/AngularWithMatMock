@@ -1,0 +1,31 @@
+.content {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-card {
+  max-width: 400px;
+  width: 300px;
+}
+
+mat-card-subtitle {
+  text-align: center;
+}
+
+mat-card-header {
+  justify-content: center;
+}
+
+mat-card-actions {
+  justify-content: space-evenly;
+}
+
+.photo mat-icon {
+  border: 1px solid #ccc;
+  --size: 150px;
+  font-size: var(--size);
+  height: var(--size);
+  width: var(--size);
+}

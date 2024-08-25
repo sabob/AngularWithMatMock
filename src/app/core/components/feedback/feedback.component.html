@@ -1,0 +1,64 @@
+<div class='feedback'
+     [@slideUpDown]="service.animationState"
+     (@slideUpDown.done)="service.slideDone($event)"
+>
+
+  <div class="feedback-menubar"
+       [ngClass]="{'in': service.animationState == 'in', 'out': service.animationState != 'in'}">
+    @if ((service.feedbackList.length > 0) && service.animationState == 'in') {
+      <div
+        class="open-close-arrow"><i class="fa fa-caret-up"></i></div>
+    }
+    @if ((service.feedbackList.length > 0) && service.animationState != 'in') {
+      <div
+        class="open-close-arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+    }
+
+    @if ((service.feedbackList.length > 0)) {
+      <div
+        class="feedback-menu" (click)="service.toggleShowFeedback()">
+        Messages
+      </div>
+    }
+
+    @if (service.feedbackList.length == 0) {
+      <div
+        class="feedback-menu" (click)="service.toggleShowFeedback()">
+        No Messages
+      </div>
+    }
+
+    @if (service.feedbackList.length > 0) {
+      <div class="alert-count" (click)="service.toggleShowFeedback()">
+        {{ service.feedbackList.length }}
+      </div>
+    }
+  </div>
+
+  <div class='feedback-header'>
+
+    <a class="clear-all btn btn-default" (click)="service.clear()" mat-button>
+      <!--<span aria-hidden="true">&times;</span>-->
+      <span aria-hidden="true">Clear all messages</span>
+    </a>
+  </div>
+
+  <div class="feedback-content scrollbar">
+
+    <mat-nav-list>
+
+      @for (item of service.feedbackList; track $index) {
+        <a class="disabled-link"
+           mat-list-item disableRipple>
+          <div mat-line [class]="getFeedbackTextColor(item)">
+            {{ item.message }}
+            <a (click)="service.removeFeedback( item )" class="feedback-icon">
+              <mat-icon [class]="getFeedbackIconColor(item)">{{ getFeedbackIcon(item) }}</mat-icon>
+            </a>
+          </div>
+        </a>
+      }
+
+    </mat-nav-list>
+  </div>
+</div>

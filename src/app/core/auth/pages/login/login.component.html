@@ -1,0 +1,16 @@
+<h1>Sample app</h1>
+<div class="login-form">
+
+  <form>
+    <h2>Login to Sample app</h2>
+    <div class="error" @if(authError)>{{ authError }}</div>
+    <input type="text" placeholder="Username" [value]="credentials.username"
+           (input)="credentials.username($event.target.value)" name="username"/>
+    <input type="password" placeholder="Password" [value]="credentials.password"
+           (input)="credentials.password($event.target.value)" name="password"/>
+
+    <div class="buttons">
+      <button type="submit" (click)="login($event)">Sign In</button>
+    </div>
+  </form>
+</div>

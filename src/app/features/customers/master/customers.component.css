@@ -1,0 +1,23 @@
+.actions {
+  margin-top: 30px;
+}
+
+.actions button {
+  width: 200px;
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px; /* Adjust the gap between buttons as needed */
+}
+
+
+[mat-row]:hover {
+  cursor: pointer;
+  background: whitesmoke;
+}
+
+[mat-row]:active {
+  background: #efefef;
+}
+

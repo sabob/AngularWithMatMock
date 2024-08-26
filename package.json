@@ -4,16 +4,18 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host localhost --open --port 4200 --proxy-config proxy.conf.js",
-    "start-mock": "ng serve --host localhost --port 80 --open --proxy-config mock/mock.proxy.conf.js --configuration mock",
+    "start-mock": "ng serve --host localhost --port 8000 --open --proxy-config mock/mock.proxy.conf.js --configuration mock",
     "build": "ng build",
     "server": "ng build --output-path ../springboot-angular-template-gateway/build/resources/main/static --watch=true --delete-output-path=true",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "mock": "start npm run start-mock-server ; npm run start-mock",
+    "mock": "concurrently \"npm run start-mock-server\" \"npm run start-mock\"",
     "mock-win": "start npm run start-mock-server && npm run start-mock",
     "start-mock-server": "nodemon mock/mock-server.js",
     "get-node": "nvm install 20.15.1",
-    "use-node": "nvm use 20.15.1"
+    "use-node": "nvm use 20.15.1",
+    "get-node-nix": ". $NVM_DIR/nvm.sh && nvm install 20.15.1",
+    "use-node-nix": ". $NVM_DIR/nvm.sh && nvm use 20.15.1"
   },
   "private": true,
   "dependencies": {
@@ -38,13 +40,14 @@
     "@angular/cli": "^18.1.0",
     "@angular/compiler-cli": "^18.1.0",
     "@types/jasmine": "~5.1.0",
+    "concurrently": "^8.2.2",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.5.2",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "typescript": "~5.5.2"
   }
 }

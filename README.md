@@ -10,7 +10,7 @@ Mock mode allows for a fast development lifecycle without having a running serve
 would run against static JSON files that are located in the ```mock-data``` folder. You can create your own files, or
 copy from live server request output.
 
-In this mode, you start the app on port 80, and ajax requests are forwarded to a mock server running on port 3000.
+In this mode, you start the app on port 80, and ajax requests are forwarded to a mock server running on port 13000.
 
 The mock server can be configured in the file
 ``` mock-server.js ```

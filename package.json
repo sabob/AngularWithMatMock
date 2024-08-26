@@ -10,7 +10,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "mock": "concurrently \"npm run start-mock-server\" \"npm run start-mock\"",
-    "mock-win": "start npm run start-mock-server && npm run start-mock",
     "start-mock-server": "nodemon mock/mock-server.js",
     "get-node": "nvm install 20.15.1",
     "use-node": "nvm use 20.15.1",

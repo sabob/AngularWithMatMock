@@ -1,5 +1,5 @@
 const contextPath = '/myapp';
-const port = '3000';
+const port = '13000';
 const host = 'http://localhost:' + port;
 
 const pathRewriteRegex = {};

@@ -12,7 +12,7 @@
 }
 
 .mai-feedback-block .mai-feedback-body .error-message {
-  color: #ff3a30;
+  color: var(--primary);
   font-size: 18px;
   padding: 5px;
 }

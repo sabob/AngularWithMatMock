@@ -7,7 +7,7 @@
       <mat-label>Firstname</mat-label>
       <input matInput placeholder="Firstname" formControlName="firstname" required>
 
-      @if (customerForm.controls.firstname.errors?.required && customerForm.controls.firstname.dirty) {
+      @if (customerForm.controls.firstname.errors?.required && customerForm.controls.firstname.dirty && customerForm.controls.firstname.dirty) {
         <mat-error>
           Firstname is required
         </mat-error>

@@ -33,7 +33,7 @@ mat-form-field {
 .card-header {
   padding: .75rem 1.25rem;
   justify-content: center;
-  background-color: #ff3a30;
+  background-color: var(--primary);
   border-radius: 11px;
   /*border-bottom-right-radius: 0px;*/
   /*border-bottom-left-radius: 0px;*/
@@ -50,13 +50,13 @@ form {
 }
 
 a, a:hover {
-  color: #ff3a30;
+  color: var(--primary);
   text-decoration: none;
   background-color: transparent;
 }
 
 li.active a {
-  background-color: #ff3a30 !important;
+  background-color: var(--primary); !important;
   border-color: var(--primary) !important;
 
 }
